@@ -207,6 +207,20 @@ main section p{
 
 /* MEDIA QUERYS-------------*/
 
+@media screen and (max-width: 120rem){
+
+    main section img{
+        width: 15vw;
+    }
+    
+}
+@media screen and (max-width: 75rem){
+
+    main section img{
+        width: 25vw;
+    }
+    
+}
 
 
 @media screen and (max-width: 55rem){
