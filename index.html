@@ -7,25 +7,39 @@
     <meta name="description" content="Mon menu web">
     <link rel="icon" sizes="32x32" href="asset/github_logo_icon_143772.png">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <title>Menu contextuel</title>
 </head>
 <body>
 
     <header>
 
+        <section class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo"><img  src="asset/user_kids_avatar_user_profile_icon_149314.png" alt=""></a>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
 
-    <nav>   
-        <img src="asset/logo_quent.png" alt="" class="logo">    
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
 
-        <ul>
-            <li> <a href="">About</a></li>
-            <li> <a href="">Contact</a></li>
-            <li> <a href="">Portfolio</a></li>
-        </ul>
-        <img src="asset/cart.png" alt="" class="cart-icon">
-    </nav>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Potfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+        </section>
     <div class="headerPage">
-    <section class="firstSection">
+    <section class="firstSection" id="about">
             <p>I'M</p>
             <h1>QUENTIN</h1>
             <h2>I AM FRONT-END DEVELOPER</h2>
@@ -79,6 +93,7 @@
     </section>
 </main>
 <script src="js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     
 </body>
 
