@@ -198,6 +198,7 @@ main section p{
 @media screen and (max-width: 75rem){
     main section{
         width: 90vw;
+    }
     main section img{
         width: 25vw;
     }
