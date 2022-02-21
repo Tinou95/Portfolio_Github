@@ -151,8 +151,8 @@ main section figure figcaption{
     text-align: center;
 }
 main section img{
-
-    padding-top: .5rem;
+    width:15vw;
+    padding: 6rem;
     opacity: .9;
     transition: .3s all ease-in-out;
 
@@ -188,16 +188,25 @@ main section p{
 
 /* MEDIA QUERYS-------------*/
 
-@media screen and (max-width: 120rem){
+
+@media screen and (max-width: 85rem){
+
 
     main section img{
-        width:15vw;
+        padding: 4rem;
     }
+
     
 }
+
+
 @media screen and (max-width: 75rem){
     main section{
         width: 90vw;
+    }
+
+    main section img{
+        padding: 3rem;
     }
 
     
@@ -226,6 +235,10 @@ main section p{
     }
     header{
         background-image: linear-gradient(rgba(0,0,0,0.3),transparent), url("../asset/portfolioo_2.gif");
+    }
+
+    main section img{
+        padding: 2rem;
     }
     
     
@@ -267,7 +280,10 @@ main section p{
 
     main section img{
         width: 30vw;
+        padding: 1rem;
     }
+
+   
    
     
 } 
