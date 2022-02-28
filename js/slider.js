@@ -42,17 +42,17 @@ slider.addEventListener('mouseleave', () => {
   holding = false;
 })
 
-function startTransition(){
+const startTransition =() =>{
 
   stopTransition();
 
   rafID = requestAnimationFrame(decreasingTransition);
 }
 
-function stopTransition(){
+const stopTransition = () =>{
   cancelAnimationFrame(rafID)
 }
-function decreasingTransition(){
+const decreasingTransition = () =>{
 
   slider.scrollLeft += velocity;
   velocity *= 0.95;
@@ -75,6 +75,8 @@ slider.addEventListener('touchend', () => {
   holder = false;
   startTransition()
 })
+
+
 slider.addEventListener('touchmove', e => {
   if(!holding) return;
 

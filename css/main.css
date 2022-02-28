@@ -1,35 +1,4 @@
-/* reset css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;600&display=swap');
 
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-   
-}
-body{
-    font:  'Inconsolata', sans-serif;
-    margin: 0;
-    background-color: #121212;
-
-}
-h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-a{
-    color: #222;
-    text-decoration: none;
-}
-*{
-    box-sizing: border-box;
-}
-button{
-    padding: 0;
-    border: 0;
-    background-color: transparent;
-}
 
 /* theme css */
 body::-webkit-scrollbar {
@@ -275,7 +244,7 @@ main section p{
     header .icons{
 
             position: absolute;
-            bottom: 35%;
+            bottom: 45%;
     }
 
     main section img{

@@ -4,12 +4,12 @@
     color: #fff;
   }
   .main-content h1 {
-    font-size: clamp(25px, 7vw, 70px);
+    font-size: clamp(2.5rem, 7vw, 7rem);
     font-weight: 200;
     
   }
   .main-content h1 + span {
-    font-size: clamp(14px, 2vw, 20px);
+    font-size: clamp(1.4rem, 2vw, 2rem);
   }
   .slideshow-container {
     margin-top: 4vw;
@@ -37,7 +37,7 @@
     position: relative;
   }
   .slide:not(:nth-child(1)){
-    margin-left: 10px;
+    margin-left: 1rem;
   }
   .overlay {
     position: absolute;
@@ -48,20 +48,20 @@
     background: rgba(0, 0, 0, 0.15);
   }
   .slide h2, .slide a {
-    text-shadow: 0 0 5px rgba(0,0,0,0.39);
+    text-shadow: 0 0 .5rem rgba(0,0,0,0.39);
   }
   .slide h2 {
     position: absolute;
-    top: clamp(10px, 2vw, 20px);
-    left: clamp(10px, 2vw, 20px);
-    font-size: clamp(20px, 3vw, 40px);
+    top: clamp(1rem, 2vw, 2rem);
+    left: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(2rem, 3vw, 4rem);
     font-weight: 300;
   }
   .slide a {
     position: absolute;
-    bottom: clamp(10px, 2vw, 20px);
-    right: clamp(10px, 2vw, 20px);
-    font-size: clamp(16px, 3vw, 20px);
+    bottom: clamp(1rem, 2vw, 2rem);
+    right: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1.6rem, 3vw, 2rem);
     font-weight: 300;
     color: #fff;
     pointer-events: auto;
