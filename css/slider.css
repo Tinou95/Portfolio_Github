@@ -56,6 +56,10 @@
     left: clamp(1rem, 2vw, 2rem);
     font-size: clamp(2rem, 3vw, 4rem);
     font-weight: 300;
+    background-color: #0d0d0d;
+    padding: 1rem;
+    border-radius: .5rem;
+
   }
   .slide a {
     position: absolute;
@@ -65,8 +69,16 @@
     font-weight: 300;
     color: #fff;
     pointer-events: auto;
+    background-color: #0d0d0d;
+    padding: 1rem;
+    border-radius: 5rem;
   }
   
+  .slide a:hover {
+ 
+   background: rgb(36, 34, 34);
+    padding: 1rem;
+  }
   
   .s1 {
     background-image: url("../asset/mario_ppe.PNG");
