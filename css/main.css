@@ -29,6 +29,10 @@ header{
     position: relative;
 }
 
+nav .nav__logo img{
+    width: 7rem;
+}
+
 
 header .headerPage{
     color: #fff;
