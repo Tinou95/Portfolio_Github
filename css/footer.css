@@ -65,6 +65,9 @@ footer ul li{
         justify-content: center;
         align-items: center;
     }
+footer img{
+    display: none;
+}
 
     .footer {
         flex-direction: column;
