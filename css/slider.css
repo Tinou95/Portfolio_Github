@@ -84,19 +84,23 @@
     background-image: url("../asset/mario_ppe.PNG");
   }
   .s2 {
-    background-image: url("../asset/batman_presentation.PNG");
-  }
-  .s3 {
-    background-image: url("../asset/insta.PNG");
-  }
-  .s4 {
-    background-image: url("../asset/google.PNG");
-  }
-  .s5 {
     background-image: url("../asset/ppe_streaming.PNG");
   }
-  .s6 {
+  .s3 {
     background-image: url("../asset/GroupeCFR.PNG");
+  }
+  .s4 {
+    background-image: url("../asset/Bloc_notes.PNG");
+  }
+  .s5 {
+    background-image: url("../asset/batman_presentation.PNG"); 
+  }
+  .s6 {
+    background-image: url("../asset/insta.PNG");
+  }
+  .s7 {
+    background-image: url("../asset/google.PNG");
+    
   }
   
   
