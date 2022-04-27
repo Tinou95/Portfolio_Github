@@ -1,19 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 
-    
     const menuShowBtn = document.getElementById('afficher_btn');
     const menuHideBtn = document.getElementById('cacher_btn');
-    const menuOverlay = document.querySelector('.nav_overlay');
-    const svg = document.querySelector('svg');
+    const competence = document.querySelector('.competence');
 
     menuShowBtn.addEventListener('click', () => { 
-        menuOverlay.classList.add('afficher_overlay')    
-        svg.style.display = 'none'; 
+
+        competence.style.display = 'none';
+        
+                                    
+        
+
     })
     menuHideBtn.addEventListener("click", () =>{
-        menuOverlay.classList.remove('afficher_overlay')
-        svg.style.display = 'block';
+
+        competence.style.display = 'block';
+  
 
     })
 
@@ -21,5 +24,3 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
   });
-
- 

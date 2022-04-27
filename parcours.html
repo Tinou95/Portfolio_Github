@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mon menu web">
+    <link rel="icon" type="image" sizes="32x32" href="asset/">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/parcours.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    
+    <title>Navbar</title>
+</head>
+<body>
+    <header >
+        <nav>
+            <a href = "index.html" class = "nav_logo"><img src="asset/code.png" alt=""></a>
+            <button type = "button" id = "afficher_btn">
+                <i class = "fas fa-bars"></i>
+            </button>
+
+            <section class="nav_overlay">
+                <div role="region" aria-label="menu" class = "nav-overlay-container">
+                    <button type = "button" id = "cacher_btn">
+                        <i class = "fas fa-close"></i>
+                    </button>
+                    <ul class = "nav-links">
+                        <li><a href = "index.html">home</a></li>
+                        <li><a href = "parcours.html">Parcours</a></li>
+                        <li><a href = "competence.html">Compétences</a></li>
+                        <li><a href = "projet.html">Projets</a></li>
+                    </ul>
+                    <ul class = "nav-icons">
+                        <li><a href = "#"> <i class = "fab fa-facebook-f"></i></a></li>
+                        <li><a href = "#"><i class = "fab fa-twitter"></i></a></li>
+                        <li><a href = "#"><i class = "fab fa-instagram"></i></a></li>
+                        <li><a href = "#"><i class = "fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
+    </header>
+
+
+    <main class="parcours">
+
+            <h2 class="heading">Mon <span>Parcours scolaire</span></h2>
+            <section>
+                <ul>
+                    <li>
+                        <h3 class="title">BTS Service Informatique aux Organisations (SIO)</h3>
+                        <p>Maîtriser les langages de programmation.
+                            Développer des solutions techniques d’infrastructure.
+                            Développer des applications logicielles.
+                            Assurer la maintenance et l’évolution de ces solutions suivant les normes de sécurité informatique actuelles.
+                            Etudier et développer des systèmes et des applications informatiques, notamment la programmation et/ou le paramétrage, la mise au point et la documentation de programmes réalisés selon les normes en vigueur dans le monde du travail.
+                            Evaluer les besoins informatiques et techniques des utilisateurs d’un système, pour ensuite les implanter.
+                        </p>
+                        <a href="#">ITIC Paris ></a>
+                        <span class="circle"></span>
+                        <time class="date">2020-2022</time>
+                    </li>
+                    <li>
+                        <h3 class="title">Baccalauréat général Scientifique</h3>
+                            <p>Les Mathématiques qui permettent de comprendre comment fonctionnent le monde et toutes les autres sciences. </p>
+                            <p>La Physique-chimie qui permet de mieux comprendre les forces, les mouvements et les équations.</p>
+                            <p>La SVT qui permet de découvrir ce qui se passe à l'intérieur d'un être vivant ou comprendre comment fonctionne un écosystème</p>
+                        <a href="#">Lycée Camille Saint-Saëns ></a>
+                        <span class="circle"></span>
+                        <time class="date">2017-2020</time>
+                    </li>
+                    <li>
+                        <h3 class="title">Diplôme national du brevet</h3>
+                        <p>Le diplôme national du brevet est un diplôme national français qui atteste de l'acquisition de connaissances générales au terme de la scolarité au collège.</p>
+                        <a href="#">Collège Émilie du Châtelet></a>
+                        <span class="circle"></span>
+                        <time class="date">2013-2017</time>
+                    </li>
+                    <li>
+                        <h3 class="title">Diplôme national de l'école primaire</h3>
+                        <p>Maîtrise de l'écriture et de la lecture</p>
+                        <a href="#">Ecole Pasteur ></a>
+                        <span class="circle"></span>
+                        <time class="date">2008-2013</time>
+                    </li>
+                    <li>
+                        <h3 class="title">Diplôme national de l'école maternelle</h3>
+                        <p>Maîtrise de la... ah nan on maîtrise rien en maternelle</p>
+                        <a href="#">Read More ></a>
+                        <span class="circle"></span>
+                        <time class="date">2005-2008</time>
+                    </li>
+                </ul>
+            </section>
+    
+
+
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/parcours.js"></script>
+</body>
+
+</html>
