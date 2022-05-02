@@ -76,11 +76,7 @@ main section li:nth-child(5):hover img {
         --main-padding: 40px;
     }
     
-    body {
-        font-family: 'Poppins', sans-serif;
-
-
-    }
+ 
     
     .container {
         padding-left: 1.5rem;
@@ -113,11 +109,12 @@ main section li:nth-child(5):hover img {
     main h2 span {
         color: #00cfe8;
     }
+ 
     
     main p {
         font-size: 1.8rem;
         color: #1b1b1b;
-        font-weight: 400;
+ 
     }
     
     main .skill-card {
@@ -145,7 +142,6 @@ main section li:nth-child(5):hover img {
         padding-top: 3rem;
         padding-bottom: 1rem;
         font-size: 2.5rem;
-        font-weight: 500;
     }
     
     main .card p{
@@ -188,7 +184,7 @@ main section li:nth-child(5):hover img {
         background-color: #00cfe8;
         border-radius: .2rem;
         color: #1b1b1b;
-        transition: background-color 0.8s;
+        transition: #ebebeb 0.8s;
         padding: 1.2rem 2rem;
         letter-spacing: .15rem;
         z-index: 5rem;

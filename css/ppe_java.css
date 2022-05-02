@@ -1,0 +1,97 @@
+header h2{
+    font-size: 3.5rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    color: #00cfe8;
+  }
+  header h2 span{
+    color: #1b1b1b;
+  }
+
+
+/* main ul li a{
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    border: solid .2rem rgba(17, 17, 17, 0.474);
+    background-color: #444;
+    font-weight: 300;
+    text-transform: capitalize;
+} */
+/*MAIN*/
+body{
+    background-color: #ebebeb;
+}
+
+main{
+    padding: 2rem auto;
+    background-color: #ebebeb;
+}
+main h2{
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+}
+main section {
+    width: 60vw;
+    margin: 1rem auto;
+    background-color: #1b1b1b;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    
+    color: #fff;
+}
+main section p{
+    font-size: 1.6rem;
+    margin: 2rem auto;
+    text-align: justify;
+}
+main section .mcd{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 100%;
+}
+main section .shema {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+}
+main section h2{
+    padding-bottom: 1rem;
+}
+
+main section ul li{
+    padding: 1rem;
+    margin: 1rem auto;
+}
+main section ul li{
+    background-color: #20252b;
+    border-radius: 1rem;
+}
+
+main section:last-child {
+    width: 20vw;
+    background-color: #20252b;
+}
+
+
+@media screen and (max-width: 70rem) {
+    main section:last-child {
+        width: 60vw;
+    }
+    main section {
+    width: 90vw;
+    }
+    main section .mcd{
+        width: 70%;
+    }
+     main section .shema{
+        width: 100%;
+    }   
+}
+
+
+
