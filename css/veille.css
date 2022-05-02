@@ -50,7 +50,7 @@ main .technique ul li a{
 
 /* MODAL */
 
-main .modal {
+/* main .modal {
     display: flex;
     justify-content: center;
     margin: 2rem auto;
@@ -109,4 +109,4 @@ main .modal {
     border: 2px solid #222;
     color: #222;
     transform: rotate(0deg);
-  }
+  } */
