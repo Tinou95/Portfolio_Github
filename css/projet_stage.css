@@ -47,18 +47,13 @@ main section p{
     margin: 2rem auto;
     text-align: justify;
 }
-main section .mcd{
+main section .groupecfr{
     display: block;
     margin: 0 auto;
-    width: 30%;
+    width: 100%;
     height: 100%;
 }
-main section .shema {
-    display: block;
-    margin: 0 auto;
-    width: 70%;
-    height: 100%;
-}
+
 main section h2{
     padding-bottom: 1rem;
 }
