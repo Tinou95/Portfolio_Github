@@ -48,22 +48,18 @@ main section p{
     text-align: justify;
 }
 main section:nth-child(1) img, main section:nth-child(2) img{
-    display: block;
-    margin: 0 auto;
+
     width: 100%;
     height: 100%;
 }
 main section .maquette{
-    display: block;
-    margin: 0 auto;
+
     width: 30%;
     height: 100%;
 }
-main section .shema {
+main section img {
     display: block;
     margin: 0 auto;
-    width: 70%;
-    height: 100%;
 }
 main section h2{
     padding-bottom: 1rem;
