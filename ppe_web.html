@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mon menu web">
+    <link rel="icon" type="image" sizes="32x32" href="asset/code.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/ppe_web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <title>Porfolio PPE Web</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="nav_logo"><img src="asset/code.png" alt=""></a>
+            <button type="button" id="afficher_btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <section class="nav_overlay">
+                <div role="region" aria-label="menu" class="nav-overlay-container">
+                    <button type="button" id="cacher_btn">
+                        <i class="fas fa-close"></i>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="parcours.html">Parcours</a></li>
+                        <li><a href="competence.html">Compétences</a></li>
+                        <li><a href="projet.html">Projets</a></li>
+                        <li><a href="veille.html">Veille</a></li>
+                    </ul>
+                    <ul class="nav-icons">
+                        <li><a href="https://www.linkedin.com/in/quentin-andrieu-5a3213235/"> <i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://twitter.com/Quentin_Lsr"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://github.com/Tinou95"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
+        <h2>Mon <span> AP Web </span></h2>
+    </header>
+
+
+    <main class="ppe_web">
+
+        <section>
+            <h2>AP Web</h2>
+            <img src="./asset/images_projet/ppe_web.PNG" alt="WEB">
+        </section>
+        <section>
+            <h2>Sujet</h2>
+            <p>
+                Une agence nous confie la réalisation d’une page publicitaire pour
+                la Maison de ligues sur le web. La promotion a pour but de
+                conquérir des nouveaux abonné(e)s, en proposant la diffusion de
+                toutes les compétitions sportives. Pour cela nous conseille d’abord
+                d’analyser toutes les fonctionnalités au travers des deux wireframes.
+                Les spécifications pour le fonctionnement de chaque partie ne sont
+                pas définies. La charte graphique doit être crée par vous.
+            </p>
+            <p>
+                Pour commencer vous devez tout simplement mettre en place une
+                structure html sémantique car le contenu de cette publication est
+                destiné à tout public. Penser à produire un code optimisé pour les
+                moteurs de recherche à l’indexation de l’information.
+            </p>
+        </section>
+        <section>
+            <h2>Maquette</h2>
+            <ul>
+                <li><img class="maquette" src="./asset/images_ppe_web/maquette1.png" alt="maquette"></li>
+                <li><img class="maquette" src="./asset/images_ppe_web/maquette2.png" alt="maquette"></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Réalisation</h2>
+            <h3>Réaliser une interface d’admin gestion client</h3>
+            <p>
+                Cette partie du site a pour but de permettre aux administrateurs des Maisons
+                des ligues, de recenser leurs clients. Pour ce faire, il faut créer une interface
+                admin qui permet d’ajouter un client, modifier sont profile ou le supprimer.
+            </p>
+            <h3>Aspect fonctionnel</h3>
+            <p>
+                Vous devez créer toute la partie gestion. Pour les enregistrements à publier il
+                faut créer une page avec un formulaire de 4 champs : Nom, Prénom, Age et
+                adresse électronique. Tous les champs sont obligatoires. Afficher un warning
+                dans le cas l’administrateur ne renseigne pas un champ.
+            </p>
+            <h3>Base de données</h3>
+            <img src="./asset/images_ppe_web/base_donnees.png" alt="base de données">
+            <h3>Aspect technique</h3>
+            <p>
+                Les technologies autorisées sont : html5 css3, js et php orienté objet
+                Police de caractères : ‘Open Sans’, sans-serif
+                Iconographies obligatoires de votre choix
+                La couleur des thèmes doivent être indexée dans des variables css
+                Le code HTML généré doit être valide selon les normes du W3C et tester
+                également, pour les spécificités de la WAI et du WCAG (accessibilité)
+                Votre rendu sera publié sur un dépôt Github. Celui ci doit avoir une
+                structure logique, contenir un readme.md avec présentation du projet et
+                un fichier « .gitignore » si besoin.
+            </p>
+        </section>
+        <section>
+            <h2>PHP</h2>
+
+            <h3>Connexion à la base de données</h3>
+
+                <p>
+                Envoie des données d'inscription à la base de données.
+            </p>
+        </section>
+        <section>
+            <a href="https://tinou95.github.io/PPE_streaming/page1.html">
+                <h2>Voir le projet</h2>
+            </a>
+        </section>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

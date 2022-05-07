@@ -47,7 +47,13 @@ main section p{
     margin: 2rem auto;
     text-align: justify;
 }
-main section .mcd{
+main section:nth-child(1) img, main section:nth-child(2) img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+main section .maquette{
     display: block;
     margin: 0 auto;
     width: 30%;
@@ -57,13 +63,6 @@ main section .shema {
     display: block;
     margin: 0 auto;
     width: 70%;
-    height: 100%;
-}
-
-main section:nth-child(1) img{
-    display: block;
-    margin: 0 auto;
-    width: 100%;
     height: 100%;
 }
 main section h2{
@@ -85,8 +84,6 @@ main section:last-child {
 }
 
 
-
-
 @media screen and (max-width: 70rem) {
     main section:last-child {
         width: 60vw;
@@ -94,13 +91,14 @@ main section:last-child {
     main section {
     width: 90vw;
     }
-    main section .mcd{
+
+    main section .maquette{
+        width: 100%;
+    }
+
+    main section img{
         width: 70%;
     }
-     main section .shema{
-        width: 100%;
-    }   
+
 }
-
-
 
