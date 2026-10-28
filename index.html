@@ -5,104 +5,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quentin Andrieu · Développeur web full stack</title>
   <meta name="description" content="Portfolio de Quentin Andrieu, développeur web full stack (TypeScript, Node.js, Express). Disponible en CDI/CDD en Île-de-France.">
+  <meta property="og:title" content="Quentin Andrieu · Développeur web full stack">
+  <meta property="og:description" content="TypeScript, Node.js, Express, SQL. 3 ans d'alternance à la Préfecture de Police de Paris. Disponible en CDI/CDD.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tinou95.github.io/Portfolio_Github/">
+  <meta name="theme-color" content="#0f1115">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f5bea'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='30' font-weight='700' text-anchor='middle' fill='white'%3EQA%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
 </head>
 <body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
   <header class="site-header">
-    <a class="brand" href="#top">Quentin Andrieu</a>
+    <a class="brand" href="#top" aria-label="Quentin Andrieu, accueil"><span class="logo">QA</span><span class="brand-name">Quentin Andrieu</span></a>
     <nav aria-label="Navigation principale">
       <a href="#tosca">Plateforme métier</a>
       <a href="#projets">Projets</a>
       <a href="#stack">Stack</a>
       <a href="#parcours">Parcours</a>
       <a href="#contact">Contact</a>
+      <button class="theme" type="button" aria-label="Changer de thème" id="theme-toggle">◐</button>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <p class="eyebrow">Développeur web full stack · Île-de-France</p>
-      <h1>Je conçois des applications web métier, du front à la base de données jusqu'au déploiement.</h1>
-      <p class="lead">3 ans d'alternance à la Préfecture de Police de Paris, Mastère Ingénierie du Web (ESGI). Stack principale : TypeScript, Node.js, Express, SQL. Disponible immédiatement en CDI ou CDD.</p>
+  <main id="contenu">
+    <section class="hero" id="top">
+      <p class="status"><span class="dot" aria-hidden="true"></span>Disponible immédiatement · CDI ou CDD · Île-de-France</p>
+      <h1>Développeur web full stack.<br><span class="accent">Des applications métier qui remplacent les tableurs.</span></h1>
+      <p class="lead">J'ai passé 3 ans en alternance à la Préfecture de Police de Paris à concevoir des applications web pour des équipes métier. Je travaille de la base de données au déploiement, en TypeScript, Node.js et Express.</p>
       <p class="actions">
         <a class="button" href="#contact">Me contacter</a>
         <a class="button ghost" href="https://github.com/Tinou95">GitHub</a>
         <a class="button ghost" href="https://www.linkedin.com/in/quentin-andrieu-5a3213235/">LinkedIn</a>
       </p>
+      <dl class="figures">
+        <div><dt>3 ans</dt><dd>d'alternance en développement</dd></div>
+        <div><dt>150</dt><dd>utilisateurs de la plateforme TOSCA</dd></div>
+        <div><dt>4</dt><dd>applications métiers conçues ou maintenues</dd></div>
+        <div><dt>Mastère</dt><dd>Ingénierie du Web, ESGI</dd></div>
+      </dl>
     </section>
 
-    <section id="tosca">
-      <h2>Une plateforme métier pour 150 utilisateurs</h2>
-      <p class="note">Application interne à la Préfecture de Police de Paris : je la décris ici sans code ni capture.</p>
+    <section id="tosca" class="reveal">
+      <p class="kicker">Étude de cas</p>
+      <h2>TOSCA : une plateforme inter-bureaux pour 150 utilisateurs</h2>
+      <p class="note">Application interne à la Préfecture de Police de Paris : je la décris sans code ni capture.</p>
+      <ol class="flow" aria-label="Du suivi Excel à la plateforme">
+        <li><strong>Avant</strong><span>Suivi entre bureaux sur Excel</span></li>
+        <li><strong>Formulaires</strong><span>Saisie des demandes</span></li>
+        <li><strong>Workflows</strong><span>Validation</span></li>
+        <li><strong>Accès par bureau</strong><span>Gestion des droits</span></li>
+        <li class="result"><strong>Après</strong><span>150 utilisateurs sur une seule plateforme</span></li>
+      </ol>
       <div class="cols">
         <article>
-          <h3>Contexte</h3>
-          <p>Le suivi entre bureaux se faisait sur Excel.</p>
-        </article>
-        <article>
           <h3>Ce que j'ai fait</h3>
-          <p>J'ai conçu et développé TOSCA, une plateforme collaborative inter-bureaux : formulaires, workflows de validation et gestion des accès par bureau. Architecture MVC en TypeScript, Node.js, Express, Sequelize et EJS, versionnée sur GitLab avec CI/CD, déployée et surveillée avec PM2.</p>
+          <p>J'ai conçu et développé TOSCA : formulaires, workflows de validation et gestion des accès par bureau. J'ai ensuite développé et maintenu 3 autres applications métiers internes.</p>
         </article>
         <article>
-          <h3>Résultat</h3>
-          <p>TOSCA a remplacé le suivi Excel pour 150 utilisateurs. J'ai ensuite développé et maintenu 3 autres applications métiers internes.</p>
+          <h3>Comment</h3>
+          <p>Architecture MVC en TypeScript, Node.js, Express, Sequelize et EJS. Versionnement sur GitLab avec CI/CD, déploiement et monitoring avec PM2.</p>
+        </article>
+        <article>
+          <h3>Avec qui</h3>
+          <p>Je travaille avec les équipes métier pour construire des applications qui répondent à leur usage.</p>
         </article>
       </div>
     </section>
 
-    <section id="projets">
-      <h2>Projets publics</h2>
+    <section id="projets" class="reveal">
+      <p class="kicker">Code public</p>
+      <h2>Projets</h2>
       <ul class="cards">
         <li>
           <h3><a href="https://github.com/Tinou95/suivi-demandes">suivi-demandes</a></h3>
-          <p>Application de suivi de demandes inter-équipes : formulaires, workflow de validation, droits par équipe. Projet de démonstration avec données fictives, écrit de zéro avec assistance IA. Express, TypeScript, Sequelize, EJS.</p>
+          <p>Application de suivi de demandes inter-équipes : formulaires, workflow de validation, droits par rôle, cloisonnement par équipe. Projet de démonstration avec données fictives, écrit de zéro avec assistance IA. Tests et CI GitHub Actions.</p>
+          <ul class="tags"><li>TypeScript</li><li>Express</li><li>Sequelize</li><li>EJS</li><li>Tests</li></ul>
         </li>
         <li>
           <h3><a href="https://github.com/Tinou95/instagram-auto">instagram-auto</a></h3>
-          <p>Publication d'un post Instagram par jour via GitHub Actions (workflow planifié, file d'attente de posts, jeton stocké en secret GitHub).</p>
+          <p>Publication d'un post Instagram par jour via GitHub Actions : workflow planifié, file d'attente de posts, jeton stocké en secret GitHub.</p>
+          <ul class="tags"><li>JavaScript</li><li>GitHub Actions</li><li>API Instagram</li></ul>
         </li>
         <li>
           <h3><a href="https://github.com/Tinou95/PPE_streaming">PPE_streaming</a></h3>
           <p>Site PHP/SQL avec inscription, connexion et inscription à des événements sportifs. Projet de BTS SIO (2022).</p>
+          <ul class="tags"><li>PHP</li><li>SQL</li><li>HTML/CSS</li></ul>
         </li>
       </ul>
+      <p class="aside">Entrepreneuriat : j'ai lancé une boutique en ligne sur Shopify, en micro-entreprise : <a href="https://chevaliere-pour-homme.com">chevaliere-pour-homme.com</a>. C'est le contexte d'instagram-auto.</p>
     </section>
 
-    <section id="boutique">
-      <h2>Entrepreneuriat</h2>
-      <p>J'ai lancé une boutique en ligne sur Shopify, en micro-entreprise : <a href="https://chevaliere-pour-homme.com">chevaliere-pour-homme.com</a>. C'est le contexte d'<a href="https://github.com/Tinou95/instagram-auto">instagram-auto</a>, où j'automatise ce qui peut l'être.</p>
-    </section>
-
-    <section id="stack">
+    <section id="stack" class="reveal">
+      <p class="kicker">Outils</p>
       <h2>Stack</h2>
       <dl class="stack">
-        <div><dt>Langages</dt><dd>TypeScript, JavaScript, PHP, SQL, HTML, CSS</dd></div>
-        <div><dt>Back-end</dt><dd>Node.js, Express, Sequelize, architecture MVC</dd></div>
-        <div><dt>Front-end</dt><dd>EJS, WordPress. React : notions, vu en formation</dd></div>
-        <div><dt>Outils</dt><dd>Git, GitLab CI/CD, GitHub Actions, PM2, cPanel</dd></div>
-        <div><dt>Méthodes</dt><dd>Développement assisté par IA, travail avec les équipes métiers</dd></div>
+        <div><dt>Langages</dt><dd><ul class="tags"><li>TypeScript</li><li>JavaScript</li><li>PHP</li><li>SQL</li><li>HTML</li><li>CSS</li></ul></dd></div>
+        <div><dt>Back-end</dt><dd><ul class="tags"><li>Node.js</li><li>Express</li><li>Sequelize</li><li>MVC</li></ul></dd></div>
+        <div><dt>Front-end</dt><dd><ul class="tags"><li>EJS</li><li>WordPress</li><li>React (notions)</li></ul></dd></div>
+        <div><dt>Outils</dt><dd><ul class="tags"><li>Git</li><li>GitLab CI/CD</li><li>GitHub Actions</li><li>PM2</li><li>cPanel</li></ul></dd></div>
+        <div><dt>Méthodes</dt><dd><ul class="tags"><li>Développement assisté par IA</li><li>Travail avec les équipes métier</li></ul></dd></div>
       </dl>
     </section>
 
-    <section id="parcours">
-      <h2>Parcours</h2>
+    <section id="parcours" class="reveal">
+      <p class="kicker">Parcours</p>
+      <h2>Expérience et formation</h2>
       <ol class="timeline">
-        <li><span>2023 – 2026</span><div><strong>Développeur full stack (alternance)</strong>, Préfecture de Police de Paris</div></li>
-        <li><span>2024 – 2026</span><div><strong>Mastère Ingénierie du Web</strong>, ESGI, Paris. Projet annuel MaVoiture (marketplace de location de voitures) : j'ai présenté la partie agence en soutenance.</div></li>
-        <li><span>2023 – 2024</span><div><strong>Bachelor Ingénierie du Web</strong>, ESGI, Paris</div></li>
-        <li><span>2022 – 2023</span><div><strong>Développeur web (stage)</strong>, Akila Ingénierie : site institutionnel, médiathèque, plugins WordPress</div></li>
-        <li><span>2021</span><div><strong>Développeur web (stage)</strong>, Groupe CFR : front et back d'un site vitrine, de la base de données à la mise en ligne</div></li>
-        <li><span>2020 – 2022</span><div><strong>BTS SIO, option SLAM</strong>, ITIC Paris</div></li>
+        <li><span>2023 – 2026</span><div><strong>Développeur full stack (alternance)</strong><br>Préfecture de Police de Paris</div></li>
+        <li><span>2024 – 2026</span><div><strong>Mastère Ingénierie du Web</strong><br>ESGI, Paris. Projet annuel MaVoiture (marketplace de location de voitures) : j'ai présenté la partie agence en soutenance.</div></li>
+        <li><span>2023 – 2024</span><div><strong>Bachelor Ingénierie du Web</strong><br>ESGI, Paris</div></li>
+        <li><span>2022 – 2023</span><div><strong>Développeur web (stage)</strong><br>Akila Ingénierie : site institutionnel, médiathèque, plugins WordPress</div></li>
+        <li><span>2021</span><div><strong>Développeur web (stage)</strong><br>Groupe CFR : front et back d'un site vitrine, de la base de données à la mise en ligne</div></li>
+        <li><span>2020 – 2022</span><div><strong>BTS SIO, option SLAM</strong><br>ITIC Paris</div></li>
       </ol>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="contact" class="reveal contact">
+      <p class="kicker">Contact</p>
+      <h2>Travaillons ensemble</h2>
       <p>Je cherche un poste de développeur web full stack en CDI ou CDD, en Île-de-France.</p>
-      <p><a href="mailto:quentinandrieu@yahoo.com">quentinandrieu@yahoo.com</a> · <a href="https://www.linkedin.com/in/quentin-andrieu-5a3213235/">LinkedIn</a> · <a href="https://github.com/Tinou95">GitHub</a></p>
+      <p class="actions">
+        <a class="button" href="mailto:quentinandrieu@yahoo.com">quentinandrieu@yahoo.com</a>
+        <a class="button ghost" href="https://www.linkedin.com/in/quentin-andrieu-5a3213235/">LinkedIn</a>
+        <a class="button ghost" href="https://github.com/Tinou95">GitHub</a>
+      </p>
     </section>
   </main>
 
   <footer class="site-footer">Quentin Andrieu · Île-de-France</footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
