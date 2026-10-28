@@ -58,23 +58,27 @@
       <p class="note">Application interne à la Préfecture de Police de Paris : je la décris sans code ni capture.</p>
       <ol class="flow" aria-label="Du suivi Excel à la plateforme">
         <li><strong>Avant</strong><span>Suivi entre bureaux sur Excel</span></li>
-        <li><strong>Formulaires</strong><span>Saisie des demandes</span></li>
-        <li><strong>Workflows</strong><span>Validation</span></li>
-        <li><strong>Accès par bureau</strong><span>Gestion des droits</span></li>
+        <li><strong>Centralisation</strong><span>Toutes les données au même endroit</span></li>
+        <li><strong>Contrôle de saisie</strong><span>Des règles pour éviter les erreurs</span></li>
+        <li><strong>Droits par champ</strong><span>Lecture, écriture ou champ masqué selon le rôle</span></li>
         <li class="result"><strong>Après</strong><span>150 utilisateurs sur une seule plateforme</span></li>
       </ol>
       <div class="cols">
         <article>
-          <h3>Ce que j'ai fait</h3>
-          <p>J'ai conçu et développé TOSCA : formulaires, workflows de validation et gestion des accès par bureau. J'ai ensuite développé et maintenu 3 autres applications métiers internes.</p>
+          <h3>Problème</h3>
+          <p>Le suivi se faisait sur des fichiers Excel : les bureaux avaient du mal à communiquer entre eux et les erreurs de saisie étaient possibles.</p>
         </article>
         <article>
-          <h3>Comment</h3>
-          <p>Architecture MVC en TypeScript, Node.js, Express, Sequelize et EJS. Versionnement sur GitLab avec CI/CD, déploiement et monitoring avec PM2.</p>
+          <h3>Solution</h3>
+          <p>J'ai conçu et développé TOSCA : tout est numérisé et centralisé en un seul endroit, avec des règles de contrôle sur les champs pour éviter les erreurs de saisie, des formulaires, des workflows de validation et une gestion des accès par bureau. Les droits se règlent par rôle et par champ : certains profils voient un champ en lecture seule, d'autres en lecture et écriture, d'autres ne le voient pas.</p>
         </article>
         <article>
-          <h3>Avec qui</h3>
-          <p>Je travaille avec les équipes métier pour construire des applications qui répondent à leur usage.</p>
+          <h3>Résultat</h3>
+          <p>L'application est plus rapide que les fichiers Excel et plus facile à maintenir. Elle a remplacé le suivi Excel pour 150 utilisateurs, et j'ai ensuite développé et maintenu 3 autres applications métiers internes.</p>
+        </article>
+        <article>
+          <h3>Stack et outils</h3>
+          <p>Architecture MVC en TypeScript, Node.js, Express, Sequelize et EJS. Versionnement sur GitLab avec CI/CD, déploiement et monitoring avec PM2. Je travaille avec les équipes métier.</p>
         </article>
       </div>
     </section>
