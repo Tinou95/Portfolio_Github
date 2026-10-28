@@ -1,117 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mon menu web">
-    <link rel="icon" type="image" sizes="32x32" href="asset/code.png">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/menu_page.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    
-    
-    <title>Porfolio Menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quentin Andrieu · Développeur web full stack</title>
+  <meta name="description" content="Portfolio de Quentin Andrieu, développeur web full stack (TypeScript, Node.js, Express). Disponible en CDI/CDD en Île-de-France.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header >
-        <nav>
-            <a href = "#" class = "nav_logo"><img src="asset/code.png" alt=""></a>
-            <button type = "button" id = "afficher_btn">
-                <i class = "fas fa-bars"></i>
-            </button>
+  <header class="site-header">
+    <a class="brand" href="#top">Quentin Andrieu</a>
+    <nav aria-label="Navigation principale">
+      <a href="#tosca">Plateforme métier</a>
+      <a href="#projets">Projets</a>
+      <a href="#stack">Stack</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-            <section class="nav_overlay">
-                <div role="region" aria-label="menu" class = "nav-overlay-container">
-                    <button type = "button" id = "cacher_btn">
-                        <i class = "fas fa-close"></i>
-                    </button>
-                    <ul class = "nav-links">
-                        <li><a href = "index.html">home</a></li>
-                        <li><a href = "parcours.html">Parcours</a></li>
-                        <li><a href = "competence.html">Compétences</a></li>
-                        <li><a href = "projet.html">Projets</a></li>
-                        <li><a href = "veille.html">Veille</a></li>
-                    </ul>
-                    <ul class = "nav-icons">
-                        <li><a href = "https://www.linkedin.com/in/quentin-andrieu-5a3213235/"> <i class = "fab fa-linkedin-in"></i></a></li>
-                        <li><a href = "https://twitter.com/Quentin_Lsr"><i class = "fab fa-twitter"></i></a></li>
-                        <li><a href = "#"><i class = "fab fa-instagram"></i></a></li>
-                        <li><a href = "https://github.com/Tinou95"><i class = "fab fa-github"></i></a></li>
-                    </ul>
-                </div>
-            </section>
-        </nav>
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Développeur web full stack · Île-de-France</p>
+      <h1>Je conçois des applications web métier, du front à la base de données jusqu'au déploiement.</h1>
+      <p class="lead">3 ans d'alternance à la Préfecture de Police de Paris, Mastère Ingénierie du Web (ESGI). Stack principale : TypeScript, Node.js, Express, SQL. Disponible immédiatement en CDI ou CDD.</p>
+      <p class="actions">
+        <a class="button" href="#contact">Me contacter</a>
+        <a class="button ghost" href="https://github.com/Tinou95">GitHub</a>
+        <a class="button ghost" href="https://www.linkedin.com/in/quentin-andrieu-5a3213235/">LinkedIn</a>
+      </p>
+    </section>
 
-        <section>
-            <h2>Allez en bas</h2>
-            <a href="#mon_cv">&darr;</a>
-        </section> 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#00cfe8" fill-opacity="1" d="M0,224L80,213.3C160,203,320,181,480,192C640,203,800,245,960,250.7C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-          </svg>
+    <section id="tosca">
+      <h2>Une plateforme métier pour 150 utilisateurs</h2>
+      <p class="note">Application interne à la Préfecture de Police de Paris : je la décris ici sans code ni capture.</p>
+      <div class="cols">
+        <article>
+          <h3>Contexte</h3>
+          <p>Le suivi entre bureaux se faisait sur Excel.</p>
+        </article>
+        <article>
+          <h3>Ce que j'ai fait</h3>
+          <p>J'ai conçu et développé TOSCA, une plateforme collaborative inter-bureaux : formulaires, workflows de validation et gestion des accès par bureau. Architecture MVC en TypeScript, Node.js, Express, Sequelize et EJS, versionnée sur GitLab avec CI/CD, déployée et surveillée avec PM2.</p>
+        </article>
+        <article>
+          <h3>Résultat</h3>
+          <p>TOSCA a remplacé le suivi Excel pour 150 utilisateurs. J'ai ensuite développé et maintenu 3 autres applications métiers internes.</p>
+        </article>
+      </div>
+    </section>
 
+    <section id="projets">
+      <h2>Projets publics</h2>
+      <ul class="cards">
+        <li>
+          <h3><a href="https://github.com/Tinou95/suivi-demandes">suivi-demandes</a></h3>
+          <p>Application de suivi de demandes inter-équipes : formulaires, workflow de validation, droits par équipe. Projet de démonstration avec données fictives, écrit de zéro avec assistance IA. Express, TypeScript, Sequelize, EJS.</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/Tinou95/instagram-auto">instagram-auto</a></h3>
+          <p>Publication d'un post Instagram par jour via GitHub Actions, pour ma boutique en ligne.</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/Tinou95/PPE_streaming">PPE_streaming</a></h3>
+          <p>Site PHP/SQL avec inscription, connexion et inscription à des événements sportifs. Projet de BTS SIO (2022).</p>
+        </li>
+      </ul>
+    </section>
 
-          
-    </header>
+    <section id="boutique">
+      <h2>Boutique en ligne</h2>
+      <p>Chevalière pour Homme : une boutique de dropshipping sur Shopify, lancée en micro-entreprise. Je m'en sers pour tester la vente en ligne de bout en bout et pour automatiser ce qui peut l'être.</p>
+      <p><a href="https://chevaliere-pour-homme.com">chevaliere-pour-homme.com</a></p>
+    </section>
 
+    <section id="stack">
+      <h2>Stack</h2>
+      <dl class="stack">
+        <div><dt>Langages</dt><dd>TypeScript, JavaScript, PHP, SQL, HTML, CSS</dd></div>
+        <div><dt>Back-end</dt><dd>Node.js, Express, Sequelize, architecture MVC</dd></div>
+        <div><dt>Front-end</dt><dd>EJS, WordPress. React : notions, vu en formation</dd></div>
+        <div><dt>Outils</dt><dd>Git, GitLab CI/CD, GitHub Actions, PM2, cPanel</dd></div>
+        <div><dt>Méthodes</dt><dd>Développement assisté par IA, travail avec les équipes métiers</dd></div>
+      </dl>
+    </section>
 
-    <main>
+    <section id="parcours">
+      <h2>Parcours</h2>
+      <ol class="timeline">
+        <li><span>2023 – 2026</span><div><strong>Développeur full stack (alternance)</strong>, Préfecture de Police de Paris</div></li>
+        <li><span>2024 – 2026</span><div><strong>Mastère Ingénierie du Web</strong>, ESGI, Paris. Projet annuel MaVoiture (marketplace de location de voitures) : j'ai présenté la partie agence en soutenance.</div></li>
+        <li><span>2023 – 2024</span><div><strong>Bachelor Ingénierie du Web</strong>, ESGI, Paris</div></li>
+        <li><span>2022 – 2023</span><div><strong>Développeur web (stage)</strong>, Akila Ingénierie : site institutionnel, médiathèque, plugins WordPress</div></li>
+        <li><span>2021</span><div><strong>Développeur web (stage)</strong>, Groupe CFR : front et back d'un site vitrine, de la base de données à la mise en ligne</div></li>
+        <li><span>2020 – 2022</span><div><strong>BTS SIO, option SLAM</strong>, ITIC Paris</div></li>
+      </ol>
+    </section>
 
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Je cherche un poste de développeur web full stack en CDI ou CDD, en Île-de-France.</p>
+      <p><a href="mailto:quentinandrieu@yahoo.com">quentinandrieu@yahoo.com</a> · <a href="https://www.linkedin.com/in/quentin-andrieu-5a3213235/">LinkedIn</a> · <a href="https://github.com/Tinou95">GitHub</a></p>
+    </section>
+  </main>
 
-        <section>
-            <figure id="mon_cv">
-                <img src="asset/images_menu/cv.png" alt="cv">
-                <figcaption>
-                    <h2>Mon C.V. En Ligne</h2>
-                    <p>Un aperçu des mes compétences, de mes projets et de mes éxperiences professionelles</p>
-                    <a href="asset/images_menu/CV_31_03.jpg" target="_blank">En savoir plus</a>
-                </figcaption>
-            </figure>
-            <figure id="parcours">
-                <img src="asset/images_menu/parcours.png" alt="parcours">
-                <figcaption>
-                    <h2>Mon Parcours</h2>
-                    <p>J’ai 20 ans et je suis étudiant en 2e année de BTS à l'ITIC Paris </p>
-                    <a href="parcours.html">En savoir plus</a>
-                </figcaption>
-            </figure>    
-            <figure id="compétences">
-                <img src="asset/images_menu/compétences.webp" alt="compétences">
-                <figcaption>
-                    <h2>Mes Compétences</h2>
-                    <p>Actuellement, j’ai acquis un certain nombre de compétences théoriques et pratiques dans différents domaines techniques. Mes projets m’ont permis de me perfectionner</p>
-                    <a href="competence.html">En savoir plus</a>
-                </figcaption>
-            </figure>
-            
-            <figure id="projets">
-                <img src="asset/images_menu/projets.png" alt="projets">
-                <figcaption>
-                    <h2>Mes Projets</h2>
-                    <p>J’ai eu l’occasion de faire de plusieurs projets en informatique à l'école, pour des stages en entreprise et également de façon personnelle. </p>
-                    <a href="projet.html">En savoir plus</a>
-                </figcaption>
-            </figure> 
-            <figure id="veille">
-                <img src="asset/images_menu/veille_techno.png" alt="veille techno">
-                <figcaption>
-                    <h2>Ma Veille</h2>
-                    <p>Une veille portant sur les technologies dans le sport. </p>
-                    <a href="veille.html">En savoir plus</a>
-                </figcaption>
-            </figure>       
-        </section>
-
-    </main>
-
-
-    <script src="js/app.js"></script>
+  <footer class="site-footer">Quentin Andrieu · Île-de-France</footer>
 </body>
-
 </html>
-
-
-
